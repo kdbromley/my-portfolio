@@ -81,7 +81,7 @@ nav {
 
 .image-center {  /*resize and center picture of me on beach */
   align-content: center;
-  width: 50%;
+  width: 40%;
   padding: 10px;
   margin: 10px;
 }
@@ -108,9 +108,9 @@ nav {
   background-position: center
  }
 
-.resize {           /* ensure background picture stays at full size */
-  min-height: 700px;
-}
+/*.resize {           ensure background picture stays at full size
+  min-height: 900px;
+}*/
 
 section h2 {     /* style "Hi, I'm k.d. Bromley" heading */
  margin-right: 5%;
@@ -119,7 +119,6 @@ section h2 {     /* style "Hi, I'm k.d. Bromley" heading */
 }
 
 .contact-list {         /* center list so that text can be aligned left to align bulletpoints */
-  margin-right: 55%;
   margin-left: 40%;
   list-style-type: none;  
   text-align: left;
