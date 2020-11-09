@@ -81,7 +81,7 @@ nav {
 
 .image-center {  /*resize and center picture of me on beach */
   align-content: center;
-  width: 600px;
+  width: 400px;
   padding: 10px;
   margin: 10px;
 }
@@ -104,13 +104,13 @@ nav {
 .background {         /*add my picture as background image of section container with intro */
   background-image: url(images/me.jpeg);
   background-repeat: no-repeat;
-  background-size: 90%;
+  background-size: 80%;
   background-position: center
  }
 
-/*.resize {           ensure background picture stays at full size
+.resize {          /* ensure background picture stays at right height */
   min-height: 900px;
-}*/
+}
 
 section h2 {     /* style "Hi, I'm k.d. Bromley" heading */
  margin-right: 5%;
