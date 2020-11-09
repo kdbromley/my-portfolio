@@ -62,10 +62,10 @@ a:hover {
 a:active {
   color: black;
 }
-
 footer {
- text-align: left;
- margin 20px;
+ margin: 50px;
+ padding: 10px;
+ border-top: 2px solid black;
 }
 
 /* Header */
@@ -91,13 +91,12 @@ nav {
   margin: 10px;
 }
 
-
 .intro-text-box {      /*style intro to align right and match right margin of background image, and style text in intro */
   padding: 2px;
   margin-left: 65%;
   margin-right: 5%;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 1%;
+  margin-bottom: 5%;
   border: none;
   color: #141435;
   font-family: Helvetica, Arial, sans-serif;
@@ -106,18 +105,18 @@ nav {
   background-color: #E7D6C5;
 }
   
-.background {         /*add my picture as background image of section container with intro */
+.background {         /*add my picture as background image of section container with intro: size-controlled and attachment fixed for scrolling */
   background-image: url(images/me.jpeg);
   background-repeat: no-repeat;
   background-size: 80%;
-  background-position: center
+  background-position: center;
+  background-attachment: fixed;   
+  padding-top: 5%;
+  padding-bottom: 8%;
  }
 
-.resize {          /* ensure background picture stays at right height */
-  min-height: 200px;
-}
-
-section h2 {     /* style "Hi, I'm k.d. Bromley" heading */
+section h2 {     /* style "Hi, I'm k.d. Bromley" heading to sit above intro-text-box*/
+ margin-top: 5%;
  margin-right: 5%;
  text-align: right;
   
@@ -127,6 +126,7 @@ section h2 {     /* style "Hi, I'm k.d. Bromley" heading */
   margin-left: 40%;
   list-style-type: none;  
   text-align: left;
+  font-family: "Sen Regular", "Open Sans", sans-serif;
 }
 
 ul li::before {  /* add unique bullet points to contact links */
