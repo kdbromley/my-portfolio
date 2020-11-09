@@ -76,6 +76,11 @@ nav {
   margin: 10px;
 }
 
+img {
+ width: 80%;
+ max-width: 100%;
+}
+
 
 /* Main */
 
