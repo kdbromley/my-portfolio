@@ -114,7 +114,7 @@ nav {
  }
 
 .resize {          /* ensure background picture stays at right height */
-  min-height: 900px;
+  min-height: 500px;
 }
 
 section h2 {     /* style "Hi, I'm k.d. Bromley" heading */
