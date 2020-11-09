@@ -76,17 +76,12 @@ nav {
   margin: 10px;
 }
 
-img {
- width: 80%;
- max-width: 100%;
-}
-
 
 /* Main */
 
 .image-center {  /*resize and center picture of me on beach */
   align-content: center;
-  width: 40%;
+  width: 600px;
   padding: 10px;
   margin: 10px;
 }
