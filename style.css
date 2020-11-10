@@ -1,19 +1,22 @@
 /* General */
  
 h1 {        /* styling for main header - text, border style, and margins/padding */
-  align-content: center;
-  text-align: center;
-  border: .3px solid #141435;
-  padding: 5px;
-  margin: 5px;
-  border-color: #141435;
+ font-size: 36pt;
+ align-content: center;
+ text-align: center;
+ border: .3px solid #141435;
+ padding: 5px;
+ margin: 5px;
+ border-color: #141435;
 }
 
-h2, h3 {
+
+h2, h3 {   /* style "Hi, I'm k.d. Bromley" and "About Me" headers */
   margin: 10px;
   padding: 10px;
   text-align: center;
   font-family: "Sen Regular", "Open Sans", sans-serif;
+  letter-spacing: 1.5px;
 }
 
 body {   /* default color for body text and background */
@@ -62,6 +65,7 @@ a:hover {
 a:active {
   color: black;
 }
+
 footer {
  margin: 50px;
  padding: 10px;
@@ -70,14 +74,14 @@ footer {
 
 /* Header */
   
-header {            /* text styling for nav and main header + header margin */
+header {            /* text styling for nav and h1 + header margin */
   background-color: #f5f5f5;
   font-family: "Montserrat", Raleway, sans-serif;
   letter-spacing: 1.5px;
   margin: 10px;
 }
 
-nav {
+nav {    /* nav specific margin styling */
   margin: 10px;
 }
 
@@ -100,13 +104,13 @@ nav {
   border: none;
   color: #141435;
   font-family: Helvetica, Arial, sans-serif;
-  line-height: big;
+  line-height: 150%;
   letter-spacing: 1.5px;
   background-color: #E7D6C5;
 }
   
-.background {         /*add my picture as background image of section container with intro: size-controlled and attachment fixed for scrolling */
-  background-image: url(images/me.jpeg);
+.my-picture-bg {         /*add my picture as background image of section container with intro: size-controlled and attachment fixed for scrolling */
+  background-image: url(images/me-compress.jpeg);
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: center;
@@ -115,12 +119,6 @@ nav {
   padding-bottom: 8%;
  }
 
-section h2 {     /* style "Hi, I'm k.d. Bromley" heading to sit above intro-text-box*/
- margin-top: 5%;
- margin-right: 5%;
- text-align: right;
-  
-}
 
 .contact-list {         /* center list so that text can be aligned left to align bulletpoints */
   margin-left: 40%;
