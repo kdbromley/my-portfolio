@@ -1,0 +1,138 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+
+body {
+  background-color: whitesmoke;
+}
+
+a:link {
+  color: #007673
+}
+a:visited {
+  color: #CFB53B;
+}
+a:hover {
+  color: darkgoldenrod;
+}
+a:active {
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+/* Header (Mobile First) */
+
+  header { 
+    text-align: center;
+    font-family: Montserrat, Raleway, sans-serif; 
+    letter-spacing: 2px;
+    border-top: .5px solid #CFB53B;
+    border-bottom: .5px solid #CFB53B;
+    padding-bottom: 20px;
+  }
+
+
+/* Header (Desktop) */
+
+@media all and (min-width: 800px) {
+  header {  padding: 0; }
+  
+  header nav, h1 {
+   height: 50px;
+   margin: 15px 0;
+  }
+
+  header nav {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    text-align: right;
+    padding-top: 5%;
+    padding-right: 10px;
+  }
+
+  header h1 {
+    font-size: 40px;
+    letter-spacing: 2.5px;
+    text-align: left;
+    padding: 10px 10px 20px 10px;
+  }
+
+}
+
+/* Main */
+
+h2, h3, p {
+  font-family: Sen, Roboto, "Open Sans", sans-serif;
+  margin-top: 0;
+}
+
+h2 { 
+  font-size: 25px; 
+  margin-bottom: 0;
+}
+
+h3 { 
+  font-size: 20px;
+  margin-bottom: 0;
+  }
+
+article { 
+  margin: 30px 20px;
+}
+
+
+
+/* Classes */
+.icon {
+  width: 50%;
+  align-content: center;
+  margin-left: 25%;
+}
+
+.caption {
+  margin: 5%;
+  padding: 10px;
+}
+
+/* Groups and Items (Mobile first) */
+
+.group, .group-column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.item {
+  flex: 1;
+  margin: 5px 5px 10px 0px
+}
+
+.item-double { flex: 2; }
+
+/* Desktop */
+
+@media all and (min-width: 800px) {
+
+  .item, .match-margins {
+    padding: 0 0 10px 10px;
+    margin: 0 0 10px 10px;
+  }
+
+
+  .group { flex-direction: row; }
+
+  h2 { 
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+
+}
+
+/* Footer */ 
+footer { text-align: center; }
