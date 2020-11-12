@@ -1,27 +1,17 @@
 /* General */
-@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');      /* Import Google Font 'Sen' */
 
 
 body {
   background-color: whitesmoke;
 }
 
-a:link {
-  color: #007673
-}
-a:visited {
-  color: #CFB53B;
-}
-a:hover {
-  color: darkgoldenrod;
-}
-a:active {
-  color: black;
-}
+a:link { color: #007673; }         /* link psuedo-classes */
+a:visited { color: #CFB53B; }
+a:hover { color: darkgoldenrod; }
+a:active { color: black; }
 
-img {
-  width: 100%;
-}
+img { width: 100%; }
 
 /* Header (Mobile First) */
 
@@ -35,7 +25,8 @@ img {
   }
 
 
-/* Header (Desktop) */
+/* Header (Desktop) */    
+/* changes to styling for devices with wider screens i.e. desktops */
 
 @media all and (min-width: 800px) {
   header {  padding: 0; }
@@ -84,8 +75,19 @@ article {
 }
 
 
+/* Main (Desktop) */
+
+@media all and (min-width: 800px) { 
+  h2 { 
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;    
+  }
+}
 
 /* Classes */
+
 .icon {
   width: 50%;
   align-content: center;
@@ -99,38 +101,32 @@ article {
 
 /* Groups and Items (Mobile first) */
 
-.group, .group-column {
+.group, .group-column {     /* styling for .group and .group column same for mobile */
   display: flex;
   flex-direction: column;
 }
 
 
-.item {
+.item {             /*items for flexbox styling */
   flex: 1;
   margin: 5px 5px 10px 0px
 }
 
-.item-double { flex: 2; }
+.item-double { flex: 2; }  
 
-/* Desktop */
+/* Groups and Items (Desktop) */
 
 @media all and (min-width: 800px) {
 
-  .item, .match-margins {
+  .item, .match-margins {           /* adding padding on bottom and left for text on desktop, keep text somewhat contained so it's attractive and readable */
     padding: 0 0 10px 10px;
     margin: 0 0 10px 10px;
   }
 
-  .group { flex-direction: row; }
+  .group { flex-direction: row; }   /* .group changes to row for desktop */
   
-  .intro { line-height: 150%; }
-  
-  h2 { 
-    font-size: 28px;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-bottom: 20px;    
-  }
+  .intro { line-height: 150%; }      /* expand line height for intro paragraph (right below h2 at top of page) to keep from looking short next to large pic */
+
 }
 
 /* Footer */ 
