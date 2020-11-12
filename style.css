@@ -121,17 +121,16 @@ article {
     margin: 0 0 10px 10px;
   }
 
-
   .group { flex-direction: row; }
-
+  
+  .intro { line-height: 150%; }
+  
   h2 { 
     font-size: 28px;
     letter-spacing: 2px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
   }
-  
-
 }
 
 /* Footer */ 
