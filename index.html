@@ -98,11 +98,25 @@
       <hr>
       
       <article id="contact" class="group">
-        <h2 class="item">Get in Touch!</h2>
-        <div class="item item-double">       <!-- eventually want to add icons for these various links, but for now just simple links, all open in new window -->
-          <p>Email: <a href="mailto:kd.bromley1@gmail.com" target="\_blank">kd.bromley1@gmail.com</a></p>      
+       <h2>Get in Touch!</h2>
+       <div class="item"> 
+          <p><a href="mailto:kd.bromley1@gmail.com" target="\_blank">kd.bromley1@gmail.com</a></p>    
           <p><a href="https://github.com/kdbromley" target="\_blank">GitHub</a></p>    
           <p><a href="https://www.linkedin.com/in/k-d-bromley1/" target="\_blank">LinkedIn</a></p>
+        </div>
+        <div class="item item-double">
+         <form action="https://formspree.io/f/xwkwqwdd" method="post" class="group">
+            <div class="item">
+              <label for="sender-name">Your name:</label>
+               <input id="sender-name" type="text" name="name">
+              <label for="email-address">Your email:</label>
+               <input id="email-address" type="text" name="reply-to">
+            </div>
+            <div class="item item-triple">
+              <label for="form-message">Your message:</label>
+              <textarea id="form-message" name="message" rows="4" placeholder="What's up?"></textarea>
+            </div>
+          </form>
         </div>
       </article>
 
