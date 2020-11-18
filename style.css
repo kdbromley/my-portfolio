@@ -116,7 +116,7 @@ article {
 
 .item {             /*items for flexbox styling */
   flex: 1;
-  margin: 5px 5px 10px 0px
+  margin: 5px 5px 10px 0px;
 }
 
 .item-double { flex: 2; }  
