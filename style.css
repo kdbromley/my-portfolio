@@ -1,6 +1,6 @@
 /* General */
 @import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');      /* Import Google Font 'Sen' */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
 body {
   background-color: whitesmoke;
@@ -17,7 +17,7 @@ img { width: 100%; }
 
   header { 
     text-align: center;
-    font-family: Montserrat, Raleway, sans-serif; 
+    font-family: 'Montserrat', Raleway, sans-serif; 
     letter-spacing: 2px;
     border-top: .5px solid #CFB53B;
     border-bottom: .5px solid #CFB53B;
@@ -29,11 +29,17 @@ img { width: 100%; }
 /* changes to styling for devices with wider screens i.e. desktops */
 
 @media all and (min-width: 800px) {
-  header {  padding: 0; }
+  header {  padding: 0 20px 0 20px; }
+
+  header.group {
+    justify-content: space-between;
+    align-items: center;
+  }
   
+
+
   header nav, h1 {
-   height: 50px;
-   margin: 15px 0;
+   margin: 15px 0 0 0;
   }
 
   header nav {
@@ -41,14 +47,15 @@ img { width: 100%; }
     letter-spacing: 1.5px;
     text-align: right;
     padding-top: 5%;
-    padding-right: 10px;
+    text-decoration: none;
+  
   }
 
   header h1 {
     font-size: 40px;
     letter-spacing: 2.5px;
     text-align: left;
-    padding: 10px 10px 20px 10px;
+    padding: 10px 10px 10px 10px;
   }
 
 }
@@ -62,7 +69,7 @@ h2, h3, p {
 
 h2 { 
   font-size: 25px; 
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 h3 { 
@@ -116,10 +123,10 @@ article {
 
 /* Groups and Items (Desktop) */
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 600px) {
 
   .item, .match-margins {           /* adding padding on bottom and left for text on desktop, keep text somewhat contained so it's attractive and readable */
-    padding: 0 0 10px 10px;
+    padding: 0 0 10px 0px;
     margin: 0 0 10px 10px;
   }
 
@@ -128,6 +135,63 @@ article {
   .intro { line-height: 150%; }      /* expand line height for intro paragraph (right below h2 at top of page) to keep from looking short next to large pic */
 
 }
+
+/* Contact Form */
+
+form {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  color: darkslategrey;
+  font-family: Roboto, "Open Sans", sans-serif;
+}
+
+
+form textarea {
+  width: 90%;
+  height: 85%;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+form input {
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+form div.item {
+  padding-top: 10px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+
+form.group {
+  display: flex;
+  flex-direction: column;
+
+}
+
+form.item {
+  flex: 1;
+}
+
+form .item-triple {
+  flex: 3;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+
 
 /* Footer */ 
 footer { text-align: center; }
