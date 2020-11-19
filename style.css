@@ -106,6 +106,10 @@ article {
   padding: 10px;
 }
 
+.contact-links {
+  align-self: flex-end;
+}
+
 /* Groups and Items (Mobile first) */
 
 .group, .group-column {     /* styling for .group and .group column same for mobile */
@@ -121,6 +125,10 @@ article {
 
 .item-double { flex: 2; }  
 
+ .item2 { order: 2; }
+  
+.item1 { order: 1; }
+
 /* Groups and Items (Desktop - General) */
 
 @media all and (min-width: 800px) {
@@ -133,7 +141,9 @@ article {
   .group { flex-direction: row; }   /* .group changes to row for desktop */
   
   .intro { line-height: 150%; }      /* expand line height for intro paragraph (right below h2 at top of page) to keep from looking short next to large pic */
-
+   
+  .item2 { order: 1; }
+  .item1 { order: 2; }
 }
 
 /* Contact */
@@ -198,8 +208,15 @@ form .item-triple {
 
 
 /* Desktop */
-.button { margin-left: 40%;  }
 
+@media all and (min-width: 800px) {
+  .button { margin-left: 40%;  }
+  
+.content-links {
+  margin: 10px;
+  align-self: center;
+  }
+}
 
 /* Footer */ 
 footer { 
