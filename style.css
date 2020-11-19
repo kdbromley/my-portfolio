@@ -121,9 +121,9 @@ article {
 
 .item-double { flex: 2; }  
 
-/* Groups and Items (Desktop) */
+/* Groups and Items (Desktop - General) */
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 800px) {
 
   .item, .match-margins {           /* adding padding on bottom and left for text on desktop, keep text somewhat contained so it's attractive and readable */
     padding: 0 0 10px 0px;
@@ -136,7 +136,7 @@ article {
 
 }
 
-/* Contact Form */
+/* Contact */
 
 form {
   border: 1px solid black;
@@ -193,8 +193,12 @@ form .item-triple {
 
 .button {
   display: inline-block;
-  margin-left: 40%;
+  margin-left: 25%;
 }
+
+
+/* Desktop */
+.button { margin-left: 40%;  }
 
 
 /* Footer */ 
